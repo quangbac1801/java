@@ -56,7 +56,7 @@ public class duongTron {
     // Phương thức kiểm tra 2 đường tròn có giao nhau không r1>=d/2 || r2>=d/2
     public boolean KtGiaoNhau(duongTron dt) {
         double d = Math.sqrt(Math.pow(x - dt.x, 2) + Math.pow(y - dt.y, 2));
-        System.out.println(d);
+        System.out.println("Khoang cach 2 tam la:"+d);
         if (d<=banKinh+dt.banKinh) {
             return true;
         } else {

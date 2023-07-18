@@ -29,12 +29,11 @@ class SinhVien {
     public void xuat() { // phuong thuc xuat
         System.out.println(hoTen + " - " + sdt + " - " + diaChi);
     }
-
     public static void main(String[] args) {
-        Scanner sc1 = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Nhap so sinh vien");
-        int n = sc1.nextInt();
-        sc1.nextLine();
+        int n = sc.nextInt();
+        sc.nextLine();
         SinhVien dsSinhVien[] = new SinhVien[n];
         for (int i = 0; i < n; i++) {
             System.out.println("Nhap thong tin sinh vien thu " + (i + 1));
